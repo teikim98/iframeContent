@@ -7,9 +7,10 @@
     <title>독립 외부컨텐츠 iframe 반응형 처리하기</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <style>
+        
 
         .inner{
-            width: 980px;
+            width: 650px;
            margin: 0 auto;
         }
         #youtubeContent{
@@ -20,15 +21,51 @@
         }
         #youtubeContent iframe{
             top: 0; ;left: 0; width: 100%; height: 100%;
-        }   
+            
+        }
+        #six{
+            color: wheat;
+        }
 
     </style>
 </head>
 <body>
-    <div class="inner">
-        <div id="youtubeContent" class="position-relative">   
-        <iframe class="position-absolute" width="100%" src="https://www.youtube.com/embed/1Z1eyBfPfc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="container-xl">
+        <div class="row">
+            <div class="col-md-6 px-0">
+                <div id="youtubeContent" class="position-relative">
+                    <iframe class='position-absolute' width="100%" src="https://www.youtube.com/embed/LeBOOxA6OAM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-6 px-0  bg-dark d-flex flex-column justify-content-center align-items-center">
+                <h3 class="text-white">
+                    가고 싶은 내고향 6시
+                </h3>
+            </div>
+            <!-- 2 -->
+            <div class="col-6 px-0">
+                <div id="youtubeContent" class="position-relative">
+                    <iframe class='position-absolute' width="100%" src="https://www.youtube.com/embed/LeBOOxA6OAM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-6 px-0  bg-dark d-md-flex flex-column justify-content-center align-items-center d-none">
+                <h3 class="text-white">
+                    가고 싶은 내고향 1시
+                </h3>
+            </div>
+            <!-- 3 -->
+            <div class="col-6 px-0">
+                <div id="youtubeContent" class="position-relative">
+                    <iframe class='position-absolute' width="100%" src="https://www.youtube.com/embed/LeBOOxA6OAM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-6 px-0  bg-dark d-md-flex flex-column justify-content-center align-items-center d-none">
+                <h3 class="text-white">
+                    가고 싶은 내고향 2시
+                </h3>
+            </div>
+        </div>        
+        
     </div>
-   </div>
 </body>
 </html> 
